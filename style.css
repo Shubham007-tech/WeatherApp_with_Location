@@ -1,105 +1,110 @@
-.main{
-    display: flex;
-   
-    
-  }
-  .map{
-    width:700px;
-     height:500px; 
-     
-  }
-  #data{
-  
-    background-image: url('https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2hpdGUlMjBiYWNrZ3JvdW5kJTIwbGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid blue;
-    width:700px;
-     height:500px; 
-     margin-left:15px;
-    
-  }
-  #right{
-    
-    width:700px;
-     height:500px; 
-     margin-left:15px;
-  }
-
-  .card{
-    background-color: rgba(72, 77, 64, 0.137);
-    border-radius: 0.1rem;
-    width:150px;
-    height:200px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    
-  }
-  .card:hover{
-    transform:scale(1.05)
+.main {
+  display: flex;
 }
-  .icon{
-    width:65px;
-  }
-  .temp{
-    font-size: 20px;
-    margin:0;
-    margin-left:5px;
-  }
-  input{
-        padding: 7px;
-        border: none;
-        margin: 10px;
-        margin-top: 8px;
-        margin-right: 16px;
-        font-size: 17px;
-        width:80%;
-    }
 
-    button{
-        background-color: #c4a43e; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-    }
-    .sun{
-      width:50px;
-      margin:0;
-    }
-    .mastersun{
-      display:grid;
-      grid-template-columns: 20% 20% ;
-      gap:20px;
-      border:1px solid yellow;
-      background-color: rgba(72, 77, 64, 0.452);
-      color:whitesmoke;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-    }
-    .txt{
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-    }
-    #daily{
-        margin:auto;
-        margin-top: 15px;
-        width:90%;
-        height:130px;
-        
-        display:grid;
-        grid-template-columns:  14% 14% 14% 14% 14% 14% 14%;
-        justify-content: center;
-    }
-    .daily_card{
-        background-color: rgba(116, 136, 84, 0.137);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 13px;
-        width:100px;
-        
-        text-align: center;
-    }
+.map {
+  width: 700px;
+  height: 500px;
+}
+
+#data {
+  background-image: url('https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2hpdGUlMjBiYWNrZ3JvdW5kJTIwbGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid blue;
+  width: 700px;
+  height: 500px;
+  margin-left: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#right {
+  width: 700px;
+  height: 500px;
+  margin-left: 15px;
+}
+
+.card {
+  background: linear-gradient(to bottom, rgba(72, 77, 64, 0.9), rgba(72, 77, 64, 0.2));
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  width: 65px;
+}
+
+.temp {
+  font-size: 20px;
+  margin: 0;
+  margin-left: 5px;
+}
+
+input {
+  padding: 7px;
+  border: none;
+  margin: 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  width: 80%;
+}
+
+button {
+  background-color: #c4a43e;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b18734;
+}
+
+.sun {
+  width: 50px;
+  margin: 0;
+}
+
+.mastersun {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  gap: 20px;
+  border: 1px solid yellow;
+  background-color: rgba(72, 77, 64, 0.452);
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.txt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#daily {
+  margin: auto;
+  margin-top: 15px;
+  width: 90%;
+  height: 130px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  justify-content: center;
